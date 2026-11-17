@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Título da página -->
+  <title>Portfólio</title>
+
+  <!-- Favicon do site -->
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Fontes Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+
+  <!-- Bibliotecas de ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- CABEÇALHO / NAVEGAÇÃO -->
+  <header>
+    <div class="container nav-wrapper">
+      <h1 class="logo">MEG<span class="realce">DEV</span></h1>
+
+      <!-- Menu mobile com checkbox -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav class="navbar">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#github">GitHub</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO - Sessão de boas-vindas com animação de texto -->
+  <section class="hero">
+    <!--<div class="container hero-grid">
+      <div class="hero-img">
+        <img src="assets/imgs/foto-perfil.png" alt="Foto de perfil" class="profile-img" />
+      </div> -->
+    <div class="hero-text">
+      <h2><span class="typed-text" id="typed"></span></h2>
+      <p>
+        Sou Maria Eduarda Guimarães, desenvolvedora Full Stack e criadora de soluções digitais, com experiência em automação de processos, desenvolvimento de aplicações e integração de inteligência artificial.
+      </p>
+      <a href="#projetos" class="btn btn-primary">Ver meus projetos</a>
+    </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section id="sobre" class="section">
+    <div class="container about-text">
+      <h2 class="section-title">Sobre mim</h2>
+      <p class="section-text">
+        Sou formada em Análise e Desenvolvimento de Sistemas e tenho experiência com desenvolvimento de soluções digitais, automação de processos e criação de aplicações. Trabalho com tecnologias como React, JavaScript, Python, Power Platform e n8n, explorando diferentes ferramentas para transformar ideias em soluções funcionais.
+      </p>
+      <p class="section-text">
+        Ao longo da minha trajetória, tive a oportunidade de desenvolver ferramentas internas na Caixa Econômica Federal onde atuei com desenvolvimento de aplicações utilizando Microsoft Power Platform, criando ferramentas para otimizar processos internos, organizar informações e reduzir atividades manuais.
+      </p>
+    </div>
+  </section>
+
+  <!-- HABILIDADES / STACKS (Cards) -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <!-- Cada "skill-card" representa uma habilidade com ícone -->
+        <div class="skill-card">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-typescript-plain colored"></i>
+          <span>TypeScript</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-react-original colored"></i>
+          <span>React</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-python-plain colored"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-n8n-plain-wordmark"></i>
+          <span>n8n</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-git-plain colored"></i>
+          <span>Git</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-github-original"></i>
+          <span>GitHub</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-figma-plain colored"></i>
+          <span>Figma</span>
+        </div>
+        <div class="skill-card">
+          <i class="devicon-azuresqldatabase-plain"></i>
+          <span>Sql</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/imgs/PowerAutomate_scalable.svg" width="40" alt="Power Automate" />
+          <span>Power Automate</span>
+        </div>
+        <div class="skill-card">
+          <img src="assets/imgs/PowerApps_scalable.svg" width="40" alt="Power Apps" />
+          <span>Power Apps</span>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos" class="section">
+    <div class="container">
+      <h2>Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <img src="assets/imgs/card-project-1.jpeg" height="30" alt="Print do projeto 1" />
+          <h3>MedTimely</h3>
+          <p>
+            Aplicativo de lembrete de medicação feito com React Native e Expo.
+          </p>
+          <div class="btns">
+            <!-- <a href="#">Ver projeto</a> -->
+            <a href="https://github.com/dudamegc/MedTimely">Ver código</a>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <img src="assets/imgs/card-project-2.png" alt="Print do projeto 2" />
+          <h3>Pomodoro</h3>
+          <p>
+            Site de temporizador Pomodoro feito com React,HTML, CSS e JavaScript, com design responsivo e intuitivo.
+          </p>
+          <div class="btns">
+            <!-- <a href="#">Ver projeto</a> -->
+            <a href="https://github.com/dudamegc/IESB-OESTE-FRONTEND">Ver código</a>
+          </div>
+        </div>
+
+        <!-- <div class="projeto-card">
+          <img src="assets/imgs/card-project-3.png" alt="Print do projeto 3" />
+          <h3>Gerenciador de Tarefas</h3>
+          <p>
+            Gerenciador de tarefas gamificado feito com HTML, CSS e JavaScript.
+          </p>
+          <div class="btns">
+            <a href="#">Ver projeto</a>
+            <a href="#">Ver código</a>
+          </div> -->
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO GITHUB  -->
+  <section id="github" class="section">
+    <div class="container">
+      <h2 class="section-title">Meus códigos no GitHub</h2>
+      <p class="section-subtitle">Tô começando minha jornada como dev e já estou praticando bastante! No meu GitHub você encontra exercícios, mini projetos e experiências enquanto aprendo e evoluo.</p>
+      <a href="https://github.com/dudamegc" target="_blank" class="btn btn-primary">
+        <i class="devicon-github-original"></i> Ver meu GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <div class="container contato-card">
+      <h2>Contato</h2>
+      <p>Me chama no LinkedIn ou manda um e-mail 😊</p>
+      <div class="social-links">
+        <a href="https://github.com/dudamegc" class="btn-social">
+          <i class="devicon-github-original"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/mariaeduardagcosta/" class="btn-social">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="megacosta10@gmail.com" class="btn-social">
+          <i class="fas fa-envelope"></i> E-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>
+      © 2026 Maria Eduarda Guimarães. Todos os direitos reservados.
+    </p>
+  </footer>
+
+  <!-- SCRIPT: Animação Hello World na Hero -->
+  <script>
+    const text = "Hello, World!";
+    const typedEl = document.getElementById("typed");
+
+    let i = 0;
+    function digitar() {
+      if (i < text.length) {
+        typedEl.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(digitar, 120);
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", digitar);
+  </script>
+</body>
+
+</html>
